@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+  background-image: url("../images/sfondofiori.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background: whitesmoke;
+
+  position: relative; /*per sfondo*/
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 60%;
+  font-family: "Gloria Hallelujah";
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  color: #574240;
+  border: solid #574240 0.1rem;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  padding: 0.5rem;
+}
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.data {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Titan One", cursive;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #c25e5e;
+  font-size: 1rem;
+  border-radius: 2px;
+}
+.day {
+  font-size: 5rem;
+}
+.author {
+  text-align: center;
+  color: #bfa5a4;
+}
+.form {
+  text-align: center;
+  color: #c25e5e;
+  font-family: "Titan One", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 780px) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    height: 80vh;
+  }
+  .card {
+    width: 90%;
+    display: block;
+  }
+  .data {
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .day {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .month,
+  .year {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
+  .form {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    height: 80vh;
+  }
+  .card {
+    width: 60%;
+    display: block;
+  }
+  .data {
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .day {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .month,
+  .year {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
+  .form {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
